@@ -1,0 +1,2 @@
+correr el back sobre la carpeta "Backend"
+fastapi dev .\app\main.py

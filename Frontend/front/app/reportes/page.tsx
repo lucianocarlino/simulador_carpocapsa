@@ -439,17 +439,11 @@ export default function ReportesPage() {
       try {
         const parsed = JSON.parse(dataString) as MockData;
         setMockData(parsed);
-        console.log(
-          "Datos del reporte:",
-          typeof mockData?.acumulacionCarpogrados
-        );
-        // console.log("Mock Data de variab:", mockData);
-        console.log("Mock Data cargado:");
       } catch (e) {
         console.error("Error al parsear JSON:", e);
       }
     }
-  }, [mockData]);
+  }, []);
 
   if (!mockData) {
     return (
@@ -461,9 +455,6 @@ export default function ReportesPage() {
 
   return (
     <main className="container">
-      <div>
-        <h1>{typeof mockData}</h1>
-      </div>
       <div className="header">
         <Link href="/" className="back-button">
           ← Volver

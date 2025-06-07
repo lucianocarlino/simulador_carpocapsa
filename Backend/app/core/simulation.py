@@ -192,5 +192,4 @@ def simulation(hectares: float,
     { "metrica": "Cumplimiento umbral SENASA", "sinControl": measures_read * tramps, "conControl": 1 - (alarms/(measures_read * tramps)), "reduccion": (alarms / (measures_read * tramps)) * 100 if (measures_read * tramps) > 0 else 0 },
     ]
 
-    data = json.dumps(data)
     return data

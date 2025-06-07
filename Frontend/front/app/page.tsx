@@ -3,7 +3,6 @@
 import type React from "react";
 
 import { useState } from "react";
-import Link from "next/link";
 
 export default function HomePage() {
   const [formData, setFormData] = useState({
@@ -50,7 +49,9 @@ export default function HomePage() {
         </div>
 
         <div className="form-group">
-          <label htmlFor="tcs_per_hectare">Costo de las TCS por Hectárea</label>
+          <label htmlFor="tcs_per_hectare">
+            Costo de las TCS por hectéarea
+          </label>
           <input
             type="number"
             id="tcs_per_hectare"
@@ -62,7 +63,7 @@ export default function HomePage() {
 
         <div className="form-group">
           <label htmlFor="insecticide_per_hectare">
-            Costo de Insecticida por Hectárea
+            Costo de Insecticida por hectéarea
           </label>
           <input
             type="number"
@@ -75,7 +76,7 @@ export default function HomePage() {
 
         <div className="form-group">
           <label htmlFor="labor_cost_per_hectare">
-            Costo de Mano de Obra por Hectárea
+            Costo de Mano de Obra por hectéarea
           </label>
           <input
             type="number"
@@ -88,7 +89,7 @@ export default function HomePage() {
 
         <div className="form-group">
           <label htmlFor="monitoring_per_hectare">
-            Costo de Monitoreo por Hectárea
+            Costo de Monitoreo por hectéarea
           </label>
           <input
             type="number"
